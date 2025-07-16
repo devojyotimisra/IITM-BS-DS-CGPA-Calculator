@@ -4,16 +4,16 @@ export interface Course {
   grade: string | null;
 }
 
-export type GradeOption = '10' | '9' | '8' | '7' | '6' | '4' | '0';
+export type GradeOption = 'S' | 'A' | 'B' | 'C' | 'D' | 'E' | 'P';
 
 export const gradeValueMap: Record<string, number> = {
-  '10': 10,
-  '9': 9,
-  '8': 8,
-  '7': 7,
-  '6': 6,
-  '4': 4,
-  '0': 0,
+  'S': 10,
+  'A': 9,
+  'B': 8,
+  'C': 7,
+  'D': 6,
+  'E': 4,
+  'P': 0,
 };
 
 export const initialCourses: Course[] = [
@@ -44,5 +44,5 @@ export const initialCourses: Course[] = [
 ];
 
 export const gradeOptions: GradeOption[] = [
-  '10', '9', '8', '7', '6', '4', '0'
+  'S', 'A', 'B', 'C', 'D', 'E', 'P'
 ];

@@ -8,7 +8,6 @@ interface CourseGradeSelectProps {
 }
 
 export default function CourseGradeSelect({ course, onGradeChange }: CourseGradeSelectProps) {
-  // Use a unique ID to force re-render when needed
   const id = useId();
 
   return (
