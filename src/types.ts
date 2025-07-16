@@ -32,12 +32,12 @@ export const initialCourses: Course[] = [
   //diploma in programming
   { name: 'Programming, Data Structures and Algorithms using Python', credits: 4, grade: null },
   { name: 'Database Management Systems', credits: 4, grade: null },
-  { name: 'System Commands', credits: 3, grade: null },
   { name: 'Modern Application Development I', credits: 4, grade: null },
   { name: 'Modern Application Development I - Project', credits: 2, grade: null },
   { name: 'Modern Application Development II', credits: 4, grade: null },
   { name: 'Modern Application Development II - Project', credits: 2, grade: null },
   { name: 'Programming Concepts using Java', credits: 4, grade: null },
+  { name: 'System Commands', credits: 3, grade: null },
   
   //diploma in data science
   { name: 'Machine Learning Foundations', credits: 4, grade: null },
@@ -83,7 +83,7 @@ export const initialCourses: Course[] = [
   { name: 'Operating Systems', credits: 4, grade: null },
   { name: 'Mathematical Foundations of Generative AI', credits: 4, grade: null },
   { name: 'Algorithms for Data Science (ADS)', credits: 4, grade: null },
-  { name: 'Machine Learning Operations (MLOps)', credits: 4, grade: null }
+  { name: 'Machine Learning Operations (MLOps)', credits: 4, grade: null },
 ];
 
 export const gradeOptions: GradeOption[] = [
