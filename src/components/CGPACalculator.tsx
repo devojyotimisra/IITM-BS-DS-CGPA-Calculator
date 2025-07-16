@@ -54,9 +54,9 @@ export default function CGPACalculator() {
   ).length;
 
   return (
-    <div className="p-2 w-full">
-      <Card className="w-full max-w-2xl mx-auto bg-gray-900 border-gray-800 shadow-xl">
-        <CardHeader className="border-b border-gray-800 pb-4 md:pb-6">
+    <div className="w-full">
+      <Card className="w-full h-screen sm:h-auto sm:max-w-2xl mx-auto bg-gray-900 border-gray-800 shadow-xl">
+        <CardHeader className="border-b border-gray-800 pb-4 md:pb-6 px-4 sm:px-6">
           <CardTitle className="text-xl md:text-2xl font-bold text-gray-100 tracking-tight">
             IITM BS(DS) CGPA Calculator
           </CardTitle>
@@ -65,9 +65,9 @@ export default function CGPACalculator() {
           </CardDescription>
         </CardHeader>
         
-        <CardContent className="pt-4 md:pt-6">
-          <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between mb-4 gap-2 sm:gap-0">
-            <div className="flex flex-wrap gap-2 items-center mb-2 sm:mb-0">
+        <CardContent className="pt-4 md:pt-6 px-4 sm:px-6">
+          <div className="flex flex-row items-center justify-between mb-4 gap-2">
+            <div className="flex flex-wrap gap-2 items-center">
               <Badge variant="outline" className="px-2 py-1 md:px-3 border-gray-700 text-xs md:text-sm">
                 {gradedCoursesCount} / {courses.length} courses graded
               </Badge>
@@ -82,14 +82,14 @@ export default function CGPACalculator() {
             <Button 
               variant="outline" 
               onClick={resetGrades} 
-              className="border-gray-700 hover:bg-gray-800 hover:text-gray-200 text-xs md:text-sm"
+              className="border-gray-700 hover:bg-gray-800 hover:text-gray-200 text-xs md:text-sm shrink-0"
               size="sm"
             >
               Reset All
             </Button>
           </div>
           
-          <ScrollArea className="h-[35vh] md:h-[40vh] pr-2 md:pr-4">
+          <ScrollArea className="h-[45vh] sm:h-[40vh] pr-2 md:pr-4">
             <div className="space-y-1">
               {courses.map((course) => (
                 <CourseGradeSelect
@@ -102,11 +102,11 @@ export default function CGPACalculator() {
           </ScrollArea>
         </CardContent>
         
-        <CardFooter className="border-t border-gray-800 pt-4 md:pt-6 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 sm:gap-0">
+        <CardFooter className="border-t border-gray-800 pt-4 md:pt-6 flex flex-row justify-between items-center px-4 sm:px-6">
           <div>
             <Button 
               onClick={calculateCGPA}
-              className="bg-gray-800 hover:bg-gray-700 text-gray-100 text-xs md:text-sm w-full sm:w-auto"
+              className="bg-gray-800 hover:bg-gray-700 text-gray-100 text-xs md:text-sm"
               size="sm"
             >
               Calculate CGPA
@@ -114,7 +114,7 @@ export default function CGPACalculator() {
           </div>
           
           {cgpa !== null && (
-            <div className="text-base md:text-lg font-semibold text-gray-100 w-full sm:w-auto text-center sm:text-right">
+            <div className="text-base md:text-lg font-semibold text-gray-100 text-right">
               Final CGPA: {cgpa.toFixed(2)}
             </div>
           )}
