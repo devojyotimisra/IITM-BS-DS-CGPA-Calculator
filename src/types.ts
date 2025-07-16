@@ -17,15 +17,17 @@ export const gradeValueMap: Record<string, number> = {
 };
 
 export const initialCourses: Course[] = [
-  //foundation
+  //foundation level 1
   { name: 'English I', credits: 4, grade: null },
-  { name: 'English II', credits: 4, grade: null },
   { name: 'Computational Thinking', credits: 4, grade: null },
-  { name: 'Programming in Python', credits: 4, grade: null },
-  { name: 'Mathematics for Data Science I', credits: 4, grade: null },
-  { name: 'Mathematics for Data Science II', credits: 4, grade: null },
   { name: 'Statistics for Data Science I', credits: 4, grade: null },
+  { name: 'Mathematics for Data Science I', credits: 4, grade: null },
+
+  //foundation level 2
+  { name: 'English II', credits: 4, grade: null },
+  { name: 'Programming in Python', credits: 4, grade: null },
   { name: 'Statistics for Data Science II', credits: 4, grade: null },
+  { name: 'Mathematics for Data Science II', credits: 4, grade: null },
 
   //diploma in programming
   { name: 'Programming, Data Structures and Algorithms using Python', credits: 4, grade: null },
